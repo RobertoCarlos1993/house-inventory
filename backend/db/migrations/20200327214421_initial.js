@@ -40,10 +40,8 @@ exports.up = async knex => {
 exports.down = async knex => {
   // rollback
   await Promise.all(
-    [
-      tableNaming.user,
-      tableNaming.item_type,
-      tableNaming.shopping_center
-    ].map(tableName => knex.schema.dropTable(tableName))
+    Object.values(tableNaming).map(tableName =>
+      knex.schema.dropTable(tableName)
+    )
   );
 };

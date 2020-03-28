@@ -9,6 +9,10 @@ An app to keep track of household items such as basic goods, spices or similar
 - [ ] Create UI in React to interact with the DB (web-app)
 - [ ] Create mobile-app in React Native to interact similarly with the b/e
 
+## Setup-Frontend
+
+- Pendant of building up the React files in the project
+
 ## Setup-Backend
 
 - Create .env with your environment variables
